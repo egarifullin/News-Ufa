@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorText</item>
+        <item name="android:actionMenuTextColor">@color/colorText</item>
+        <item name="android:textColorSecondary">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTheme">@style/ActionbarTheme</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/colorNavTextSel</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorNavTextSel</item>
+        <!-- Inactive track color(30% transparency) -->
+        <item name="android:colorForeground">@color/colorText</item>
+    </style>
+
+    <style name="ActionbarTheme">
+        <item name="android:tint">@color/colorText</item>
+        <item name="android:iconTint">@color/colorText</item>
+    </style>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/colorPrimaryDark</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+        <item name="actionMenuTextColor">@color/colorText</item>
+    </style>
+    <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:actionMenuTextColor">@color/colorText</item>
+        <item name="actionMenuTextColor">@color/colorText</item>
+        <item name="android:tint">@color/colorText</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    </style>
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/fab_scale_up</item>
+        <item name="fab_hideAnimation">@anim/scale_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">@color/colorNavTextSel</item>
+        <item name="fab_colorPressed">@color/colorNavTextSel</item>
+        <item name="fab_colorRipple">@color/colorNavTextSel</item>
+    </style>
+
+</resources>

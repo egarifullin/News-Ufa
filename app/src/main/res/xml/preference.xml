@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="fabHide"
+        android:lineSpacingExtra="8sp"
+        android:textSize="18sp"
+        android:title="Скрыть кнопку 'Фильтр'"></SwitchPreference>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/entries"
+        android:entryValues="@array/entry_values"
+        android:key="list"
+        android:negativeButtonText="Отмена"
+        android:title="Начальная страница"></ListPreference>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/themes"
+        android:entryValues="@array/themesNum"
+        android:key="listTheme"
+        android:negativeButtonText="Отмена"
+        android:title="Тема"></ListPreference>
+    <!--<MultiSelectListPreference
+        android:defaultValue="@array/entry_values"
+        android:entries="@array/entries"
+        android:entryValues="@array/entry_values"
+        android:key="listCategory"
+        android:negativeButtonText="Отмена"
+        android:title="Выбор категории" />-->
+    <SwitchPreference
+        android:key="bigText"
+        android:defaultValue="false"
+        android:lineSpacingExtra="8sp"
+        android:textSize="18sp"
+        android:title="Увеличенный текст в статьях"></SwitchPreference>
+</PreferenceScreen>
