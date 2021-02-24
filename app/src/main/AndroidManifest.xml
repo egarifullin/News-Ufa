@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ru.krus.ufanews">
+    package="ru.krus.bashNews">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,17 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrefActivity"></activity>
+        <activity android:name="ru.krus.bashNews.PrefActivity"></activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4308845933636349~3572023661" />
 
-        <activity android:name=".About" />
-        <activity android:name=".AfishaDetailed" />
-        <activity android:name=".NewsDetailed" />
+        <activity android:name="ru.krus.bashNews.About" />
+        <activity android:name="ru.krus.bashNews.AfishaDetailed" />
+        <activity android:name="ru.krus.bashNews.NewsDetailed" />
         <activity
-            android:name=".MainActivity"
+            android:name="ru.krus.bashNews.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
