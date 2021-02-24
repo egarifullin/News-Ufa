@@ -36,6 +36,8 @@ import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static android.text.Layout.*;
+
 public class NewsDetailed extends AppCompatActivity {
     TextView title_news;
     TextView text_news;
@@ -103,7 +105,7 @@ public class NewsDetailed extends AppCompatActivity {
 
         tvImageText = findViewById(R.id.tvImageText);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            text_news.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
+            text_news.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
         }
     }
 
