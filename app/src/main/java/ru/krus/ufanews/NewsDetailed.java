@@ -2,6 +2,7 @@ package ru.krus.ufanews;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.text.LineBreaker;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -46,7 +47,7 @@ public class NewsDetailed extends AppCompatActivity {
     public Elements content;
     public ArrayList<String> link = new ArrayList<String>();
     String tvNewsDetailed;
-    String imageLink;
+    public String imageLink;
     String imageText;
     int count_element;
     final String LOG_TAG = "myLogs";
@@ -104,8 +105,8 @@ public class NewsDetailed extends AppCompatActivity {
         }
 
         tvImageText = findViewById(R.id.tvImageText);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            text_news.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+        if (Build.VERSION.SDK_INT >= 26) {
+            text_news.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
     }
 
@@ -160,7 +161,11 @@ public class NewsDetailed extends AppCompatActivity {
             {
                 ivNews = findViewById(R.id.ivNews);
                 content = doc.select("div[class=c-page-content__content]").select("p");
-                imageLink = "https://gorobzor.ru" + doc.select("div[class=c-page-content__content]").select("img").attr("src");
+                imageLink = /*"https://gorobzor.ru" +*/ doc.select("body").select("div[id=main-wrapper]").
+                            select("main[id=main-content]").select("div[class=c-layout-news]").select("div[class=c-layout-news__content]").
+                            select("div[class=c-layout-news__inner]").select("div[class=c-layout-news__article]").
+                            select("div[class=c-page-content]").select("article[class=c-page-content__inner]").
+                            select("div[class=c-page-content__content]").select("figure").select("img").attr("data-src");
                 imageText = doc.select("div[class=c-page-content__content]").select("figure").select("figcaption").text();
                 tvNewsDetailed = "";
                 count_element = 0;

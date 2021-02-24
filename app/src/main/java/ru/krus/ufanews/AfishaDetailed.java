@@ -6,6 +6,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.text.LineBreaker;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -102,7 +103,7 @@ public class AfishaDetailed extends AppCompatActivity {
             tvAfishaText.setTextSize(getResources().getDimension(R.dimen.normal_text));
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            tvAfishaText.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
+            tvAfishaText.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
         NewThreadDetailed newThreadAfisha = new NewThreadDetailed();
         newThreadAfisha.execute();
