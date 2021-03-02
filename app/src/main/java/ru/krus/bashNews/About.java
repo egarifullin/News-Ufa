@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,6 +20,7 @@ import java.util.Objects;
 public class About extends AppCompatActivity {
 
     TextView tvVersion;
+    TextView tvContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,8 @@ public class About extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-
+        tvContact = findViewById(R.id.tvAboutSite2);
+        tvContact.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     public void onWebClick(View view) {
