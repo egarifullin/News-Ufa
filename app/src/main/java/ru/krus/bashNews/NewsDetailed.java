@@ -49,6 +49,7 @@ public class NewsDetailed extends AppCompatActivity {
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private AdView mAdView;
     SharedPreferences sp;
+    String tempText;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -87,7 +88,8 @@ public class NewsDetailed extends AppCompatActivity {
         newThreadNews.execute();
 
         text_add = findViewById(R.id.tvAdd);
-        text_add.setText(getIntent().getStringExtra("add"));
+        tempText = getIntent().getStringExtra("add") + " | gorobzor.ru";
+        text_add.setText(tempText);
 
         text_news = findViewById(R.id.tvNewsText);
         sp = PreferenceManager.getDefaultSharedPreferences(this);
