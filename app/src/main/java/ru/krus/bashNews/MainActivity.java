@@ -105,54 +105,54 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         if (listValue.equals("")){
             stringURL = "https://gorobzor.ru/novosti";
-            toolbar.setTitle("Новости | Все | Gorobzor.ru");
+            toolbar.setTitle("Новости | Все");
             NewsParse();
         } else if (listValue.equals("1")){
             stringURL = "https://gorobzor.ru/novosti";
-            toolbar.setTitle("Новости | Все | Gorobzor.ru");
+            toolbar.setTitle("Новости | Все");
             NewsParse();
         } else if (listValue.equals("2")){
             stringURL = "https://gorobzor.ru/novosti/proisshestviya";
-            toolbar.setTitle("Новости | Происшествия | Gorobzor.ru");
+            toolbar.setTitle("Новости | Происшествия");
             NewsParse();
         }else if (listValue.equals("3")) {
             stringURL = "https://gorobzor.ru/novosti/sport";
-            toolbar.setTitle("Новости | Спорт | Gorobzor.ru");
+            toolbar.setTitle("Новости | Спорт");
             NewsParse();
 
         }else if (listValue.equals("4 ")) {
             stringURL = "https://gorobzor.ru/novosti/obschestvo";
-            toolbar.setTitle("Новости | Общество | Gorobzor.ru");
+            toolbar.setTitle("Новости | Общество");
             NewsParse();
 
         }else if (listValue.equals("5")) {
             stringURL = "https://gorobzor.ru/novosti/ekonomika";
-            toolbar.setTitle("Новости | Экономика | Gorobzor.ru");
+            toolbar.setTitle("Новости | Экономика");
             NewsParse();
 
         }else if (listValue.equals("6")) {
             stringURL = "https://gorobzor.ru/novosti/pogoda-v-ufe-i-bashkirii";
-            toolbar.setTitle("Новости | Погода | Gorobzor.ru");
+            toolbar.setTitle("Новости | Погода");
             NewsParse();
 
         }else if (listValue.equals("7")) {
             stringURL = "https://gorobzor.ru/novosti/politika";
-            toolbar.setTitle("Новости | Политика | Gorobzor.ru");
+            toolbar.setTitle("Новости | Политика");
             NewsParse();
 
             // Handle the camera action
         } else if (listValue.equals("8")) {
-            toolbar.setTitle("Афиша | Gorobzor.ru");
+            toolbar.setTitle("Афиша");
             AfishaParse();
 
         } else if (listValue.equals("9")) {
             stringURL = "https://gorobzor.ru/novosti/goroskop-na-segodnya";
-            toolbar.setTitle("Гороскоп | Gorobzor.ru");
+            toolbar.setTitle("Гороскоп");
             NewsParse();
         } else
         {
             stringURL = "https://gorobzor.ru/novosti";
-            toolbar.setTitle("Новости | Все | Gorobzor.ru");
+            toolbar.setTitle("Новости | Все");
             NewsParse();
         }
         setSupportActionBar(toolbar);
@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Все | Gorobzor.ru");
+                toolbar.setTitle("Новости | Все");
                 navigationView.setCheckedItem(R.id.nav_home);
                 materialDesignFAM.close(true);
             }
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/proisshestviya";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Происшествия | Gorobzor.ru");
+                toolbar.setTitle("Новости | Происшествия");
                 navigationView.setCheckedItem(R.id.nav_proish);
                 materialDesignFAM.close(true);
             }
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/sport";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Спорт | Gorobzor.ru");
+                toolbar.setTitle("Новости | Спорт");
                 navigationView.setCheckedItem(R.id.nav_sport);
                 materialDesignFAM.close(true);
             }
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/obschestvo";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Общество | Gorobzor.ru");
+                toolbar.setTitle("Новости | Общество");
                 navigationView.setCheckedItem(R.id.nav_people);
                 materialDesignFAM.close(true);
             }
@@ -263,7 +263,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/ekonomika";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Экономика | Gorobzor.ru");
+                toolbar.setTitle("Новости | Экономика");
                 navigationView.setCheckedItem(R.id.nav_economy);
                 materialDesignFAM.close(true);
             }
@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/pogoda-v-ufe-i-bashkirii";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Погода | Gorobzor.ru");
+                toolbar.setTitle("Новости | Погода");
                 navigationView.setCheckedItem(R.id.nav_weather);
                 materialDesignFAM.close(true);
             }
@@ -283,7 +283,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/politika";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Новости | Политика | Gorobzor.ru");
+                toolbar.setTitle("Новости | Политика");
                 navigationView.setCheckedItem(R.id.nav_politics);
                 materialDesignFAM.close(true);
             }
@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 AfishaParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Афиша | Gorobzor.ru");
+                toolbar.setTitle("Афиша");
                 navigationView.setCheckedItem(R.id.nav_gallery);
                 materialDesignFAM.close(true);
             }
@@ -302,7 +302,7 @@ public class MainActivity extends AppCompatActivity
                 stringURL = "https://gorobzor.ru/novosti/goroskop-na-segodnya";
                 NewsParse();
                 Toolbar toolbar = findViewById(R.id.toolbar);
-                toolbar.setTitle("Гороскоп | Gorobzor.ru");
+                toolbar.setTitle("Гороскоп");
                 navigationView.setCheckedItem(R.id.nav_goroscope);
                 materialDesignFAM.close(true);
             }
@@ -330,55 +330,55 @@ public class MainActivity extends AppCompatActivity
             stringURL = "https://gorobzor.ru/novosti";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Все | Gorobzor.ru");
+            toolbar.setTitle("Новости | Все");
 
         }else if (id == R.id.nav_proish) {
             stringURL = "https://gorobzor.ru/novosti/proisshestviya";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Происшествия | Gorobzor.ru");
+            toolbar.setTitle("Новости | Происшествия");
 
         }else if (id == R.id.nav_sport) {
             stringURL = "https://gorobzor.ru/novosti/sport";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Спорт | Gorobzor.ru");
+            toolbar.setTitle("Новости | Спорт");
 
         }else if (id == R.id.nav_people) {
             stringURL = "https://gorobzor.ru/novosti/obschestvo";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Общество | Gorobzor.ru");
+            toolbar.setTitle("Новости | Общество");
 
         }else if (id == R.id.nav_economy) {
             stringURL = "https://gorobzor.ru/novosti/ekonomika";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Экономика | Gorobzor.ru");
+            toolbar.setTitle("Новости | Экономика");
 
         }else if (id == R.id.nav_weather) {
             stringURL = "https://gorobzor.ru/novosti/pogoda-v-ufe-i-bashkirii";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Погода | Gorobzor.ru");
+            toolbar.setTitle("Новости | Погода");
 
         }else if (id == R.id.nav_politics) {
             stringURL = "https://gorobzor.ru/novosti/politika";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Новости | Политика | Gorobzor.ru");
+            toolbar.setTitle("Новости | Политика");
 
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
             AfishaParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Афиша | Gorobzor.ru");
+            toolbar.setTitle("Афиша");
 
         } else if (id == R.id.nav_goroscope) {
             stringURL = "https://gorobzor.ru/novosti/goroskop-na-segodnya";
             NewsParse();
             Toolbar toolbar = findViewById(R.id.toolbar);
-            toolbar.setTitle("Гороскоп | Gorobzor.ru");
+            toolbar.setTitle("Гороскоп");
 
         } else if (id == R.id.nav_send) {
             Intent intent = new Intent(this, About.class);
